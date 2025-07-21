@@ -1,0 +1,39 @@
+{
+  "watched_files": [
+    "/etc/shadow",
+    "/etc/passwd",
+    "/etc/hosts",
+    "/etc/ssh/sshd_config",
+    "/tmp/test.txt"
+  ],
+  "suspicious_processes": [
+    "nc",
+    "ncat",
+    "socat",
+    "curl",
+    "wget",
+    "python",
+    "perl",
+    "nmap",
+    "sh"
+  ],
+  "suspicious_parents": [
+    "bash",
+    "sh",
+    "python",
+    "perl"
+  ],
+  "cmdline_keywords": [
+    "nc -e",
+    "python -m http.server",
+    "rm -rf",
+    "curl",
+    "wget"
+  ],
+ "regex": [
+  "bash -c .*nc.*",
+  "python.*eval.*",
+  ".*\\.\\/\\w+",
+  "curl.*evil"
+]
+}
